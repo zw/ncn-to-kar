@@ -14,7 +14,7 @@ ball/what-bit-am-I-meant-to-be-singing) event for each *byte* rather than each
 appear on their own, hanging in the air.  I ran [iconv][] across the lyrics
 to transcode them from ISO8859-11 to UTF-8.
 
- [iconv]: www.gnu.org/software/libiconv/documentation/libiconv/iconv.1.html "`iconv` man page"
+ [iconv]: http://www.gnu.org/software/libiconv/documentation/libiconv/iconv.1.html "`iconv` man page"
 
 I found that a newer PyKaraoke on Linux showed track/artist names in Thai just
 fine, but 0.7.1 on Windows 7 didn't, so perhaps the resulting `.kar` files
