@@ -37,7 +37,7 @@ where:
     <lyric file> is encoded in UTF-8 and has DOS line endings
         and has the song title on its own on the first line
         and has the artist name on its own on the second line
-        and the song lyric starts on the sixth line
+        and the song lyric starts on the fifth line
     <KAR file> is the name of the MIDI-with-embedded-stuff to create
 END
     exit 1;
@@ -73,7 +73,6 @@ EOM
 }
 
 # Includes both the lyric and its timing information.
-# See FIXME.
 my $karaoke_track = MIDI::Track->new;
 
 $karaoke_track->new_event('track_name', 0, "Words");
@@ -88,6 +87,7 @@ $artist_name =~ s/[\r\n]+$//;
 #chomp($artist_name);
 $karaoke_track->new_event('text_event', 0, encode("UTF-8", '@T' . $artist_name));
 
+# FIXME: could display these as @I (info) lines?
 my $discard;
 $discard = <$lyric_fh>; # Musical key in Nick Karaoke tracks
 $discard = <$lyric_fh>; # Blank line in Nick Karaoke tracks
