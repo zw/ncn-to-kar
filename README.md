@@ -2,9 +2,9 @@ ncn-to-kar
 ==========
 
 Karaoke NCN (`.mid`, `.lyr`, `.cur`) to `.kar` file converter, in the style of
-[makekar.c][makekar] by "kthx10".
+[makekar.c][makekar] by "kxth10".
 
- [makekar]: http://www.un4seen.com/forum/?topic=11559.msg81024#msg81024 "kthx10's NCN-to-KAR implementation in C"
+ [makekar]: http://www.un4seen.com/forum/?topic=11559.msg81024#msg81024 "kxth10's NCN-to-KAR implementation in C"
 
 The motivation for this was porting an existing Nick Karaoke (NickWin) track
 collection to PyKaraoke.  `makekar` as posted is not multibyte character
