@@ -16,6 +16,11 @@ to transcode them from ISO8859-11 to UTF-8.
 
  [iconv]: http://www.gnu.org/software/libiconv/documentation/libiconv/iconv.1.html "`iconv` man page"
 
+*Don't* throw away your original NCN files.  I haven't tested every file I
+converted with this code so it might produce some broken `.kar`s.  The
+originals compress really well so it costs very little to keep them in case you
+find you ruined your collection with my shonky code.
+
 I found that a newer PyKaraoke on Linux showed track/artist names in Thai just
 fine, but 0.7.1 on Windows 7 didn't, so perhaps the resulting `.kar` files
 require a recent version of PyKaraoke?
